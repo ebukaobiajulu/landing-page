@@ -244,6 +244,7 @@ section{
 /* Footer Section Styling */
 footer{
     background-color: #160926;
+    border-top: solid white 1px;
     padding-block: 3rem ;
     color: white;
 }
@@ -290,7 +291,9 @@ input{
     padding: .6rem;
     border: solid #fff 1px;
     margin-top: .5rem;
-    width: 300px;
+    /* width: 300px; */
+    display: block;
+    width: 100%;
 }
 button{
     outline: none;
@@ -298,4 +301,13 @@ button{
     display: block;
     width: 100%;
     margin-top: 2rem;
+}
+.submit-btn{
+    color: #fff;
+    font-size: 14px;
+    padding: 16px 56px 16px  56px;
+    background-color: #5D269D;
+    border-radius: 8px;
+    display: block;
+    /* width: fit-content; */
 }
