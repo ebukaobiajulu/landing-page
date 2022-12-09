@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     letter-spacing: 0.2%;
+    line-height: 38.13px;
 }
 
 picture,img,svg{
@@ -32,7 +33,7 @@ body{
 
 .container{
     padding: 1.5rem ;
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 .flex{
@@ -70,6 +71,20 @@ button{
     /* width: fit-content; */
 }
 
+/* Section headers */
+.section-header-text{
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.section-header-text h1{
+    font-size: 3.25rem;
+}
+.section-header-text p{
+    font-size: 2.375rem;
+    margin-top: 1.25rem;
+}
+
 h2{
     font-size: var(--fs-h2);
     text-align: center;
@@ -80,7 +95,6 @@ h2{
 .logo{
     width: 200px;
 }
-
 
 .nav-links{
    font-size: 1.2rem;
@@ -162,7 +176,7 @@ section{
 /* About Us */
 .about-us{
     /* border: red solid 2px; */
-    margin-top: 3rem;
+    padding: 2rem 0;
 }
 .flex-container{
     display: grid;
@@ -325,20 +339,13 @@ footer{
    
 } */
 #contactus{
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(./images/contactus-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0 !important;
 }
-.contactus-header-text{
-    text-align: center;
-    margin-bottom: 3rem;
 
-}
-.contactus-header-text h1{
-    font-size: 3.25rem;
-}
-.contactus-header-text p{
-    font-size: 2.375rem;
-    margin-top: 1.25rem;
-}
 .left{
     border: var(--col-grey) solid 2px;
     padding: 2rem;
@@ -353,13 +360,10 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-.right-contact-page{
-    /* border: red solid 2px; */
-    max-width: 500px;
-}
 
 .contactus input,
-textarea{
+textarea,
+.faq-section input{
     font-size: 14px;
     color: var(--col-nav-links);
     font-family: var(--open-sans);
@@ -377,4 +381,129 @@ textarea::placeholder,
 .contactus input::placeholder{
     font-family: var(--open-sans);
     font-size: 1rem;
+}
+
+/* FAQ section */
+.right-faq{
+    width: 352px;
+}
+
+/* About Us Section */
+.about-us-header-flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;    
+}
+.about-us-header-flex-left{
+    /* padding-left: 2rem; */
+    /* border: red solid 2px; */
+}
+.about-us-header-flex-left p{
+    width: 85%;
+    padding-left: 2rem;
+    font-size: 24px;
+}
+.about-us-images{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    /* border: yellow 2px solid; */
+}
+.about-us-images img:first-child{
+    padding-top: 3rem;    
+}
+
+#about-us-teams{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(./images/contactus-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0 !important;
+    padding: 3rem 0;
+}
+.section-header-text h2{
+    font-size: 2rem;
+}
+.section-header-text h2::after{
+    content: '';
+    display: block;
+    background-color: var(--primary-col);
+    height: 2px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.team-col-image {
+    width: 80px;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    padding: 0 3rem;
+    width: fit-content;
+    margin: auto;
+    
+}
+.team-col{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    width: fit-content;
+    line-height: 5px;
+}
+.team-col>.team-name-position{
+    margin-left: 1rem;
+}
+.team-name-position h4,
+.team-name-position p,
+.review-col p{
+    line-height: 1.3rem;
+}
+.mission-list{
+    width: fit-content;
+    margin: 0 auto;
+}
+.mission-list li{
+    list-style-type: circle;
+}
+
+/* Customer Reviews Section */
+.customer-reviews{
+    background-color: #faf6f6;
+    padding: 2rem 0;
+}
+.customer-reviews-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    padding: 0 3rem;
+    width: fit-content;
+    margin: auto;
+}
+.review-col{
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 2.79498px 2.79498px 7.68619px rgba(18, 18, 18, 0.25);
+    border-radius: 10px;
+}
+
+.review-col-text h4{
+    text-align: center;
+}
+.review-stars{
+    display: flex;
+    float: right;
+    margin-top: 7px;
+}
+.review-stars img{
+    width: 15px;
+    margin-left: 5px;
 }
